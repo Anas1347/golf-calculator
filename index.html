@@ -4,35 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Club Calculator</title>
-    <!-- Link to DaisyUI CSS for styling -->
+
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
     />
-    <!-- Link to TailwindCSS for utility classes -->
+
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-      /* Custom styles if necessary */
       @media screen and (max-width: 700px) {
-        /* Hide the .boy class elements on screens smaller than 700px */
         .boy {
           display: none;
         }
       }
 
       .gradient-text {
-        background: linear-gradient(90deg, 
-          #FF5722, /* Deep Orange */
-          #FFC107  /* Amber */
-        );
+        background: linear-gradient(90deg, #ff5722, #ffc107);
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 3rem; /* Adjust as needed */
-        font-weight: bold; /* Adjust as needed */
-        text-align: center; /* Adjust as needed */
-        margin-bottom: 1.5rem; /* Adjust as needed */
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 1.5rem;
       }
     </style>
   </head>
@@ -73,13 +68,11 @@
             </select>
           </div>
 
-          <!-- Height selection with a range from 35 to 75.5 inches -->
           <div class="mb-4">
             <label for="height_inches" class="label">
               <span class="label-text">Height (inches)</span>
             </label>
             <select id="height_inches" class="select select-bordered w-full">
-              <!-- Options for height ranging from 35 to 75.5 inches -->
               <option>Inches</option>
               <option value="35">35"</option>
               <option value="35.5">35.5"</option>
@@ -172,7 +165,6 @@
               <span class="label-text">Wrist (inches)</span>
             </label>
             <select id="wrist" class="select select-bordered w-full">
-              <!-- Options for wrist sizes from 15 to 44.5 inches -->
               <option>Inches</option>
               <option value="15">15"</option>
               <option value="15.5">15.5"</option>
@@ -249,8 +241,11 @@
           </div>
 
           <!-- Calculate button -->
-           
-          <button onclick="calculate()" class="btn btn-info w-full mt-4 text-white font-bold font-size">
+
+          <button
+            onclick="calculate()"
+            class="btn btn-info w-full mt-4 text-white font-bold font-size"
+          >
             Calculate
           </button>
         </div>
